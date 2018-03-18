@@ -1,0 +1,659 @@
+\documentclass[preprint,12pt,a4paper,authoryear]{elsarticle}
+%\usepackage[dvipdfm]{graphicx} 
+\makeatletter
+\def\ps@pprintTitle{%
+ \let\@oddhead\@empty
+ \let\@evenhead\@empty
+ \def\@oddfoot{}%
+ \let\@evenfoot\@oddfoot}
+\makeatother
+
+\usepackage{graphicx}
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{lineno}
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+
+\usepackage{float}
+\usepackage{amsmath}
+
+%for tables using merged columns
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{url}
+
+%\journal{Transportation Journal}
+
+\title{The Driver Behaviour Questionnaire in Kuwait}
+
+\begin{document}
+
+\maketitle
+
+\begin{linenumbers}
+\begin{frontmatter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author[add1]{Jamal Ahmad Al Matawah \corref{cor1}}
+\author[add2]{Other guy}
+\author[add3]{Brian Freeman}
+
+\cortext[cor1]{Corresponding author (jamaln1@hotmail.com)}
+
+\address[add1]{Public Authority for Applied Education and Training, Dept of Civil Engineering, Kuwait}
+\address[add2]{Jordan}
+\address[add3]{School of Engineering, University of Guelph, Guelph, Ontario, N1G 2W1, Canada}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstract}
+%% Text of abstract
+The Manchester Driver Behaviour Questionnaire (DBQ) is widely used to measure driving styles and investigate the relationship between driving behaviour and accident involvement. Recent evaluations of different population groups have taken place throughout the world, including countries in the Arabian Gulf. This study seeks to extend the application of the DBQ to Kuwait and its mix of native and expatriate drivers, by examining the relationships between DBQ factors and accident involvement.  In our study, 536 respondents (425  Kuwaiti and 111 Non-Kuwaitis) completed paper survey questionnaires based on the DBQ parameters as well as background information. The results showed that young Kuwaiti male drivers scored higher in almost all areas. Factor analysis resulted in four significant violation areas (speed related  errors, anger related  errors, speed related lapses, and anger related lapses) errors, and lapses. However, there were a number of differences in the factor structure when compared to the theoretical four-factor structure of the DBQ.  Regression analyses showed that errors, lapses, and aggression-speeding violations predicted accident involvement based on demographic variables (age, sex, and annual mileage).
+\\
+
+\end{abstract}
+
+\begin{keyword}
+DBQ \sep Kuwait \sep driver behavior \sep traffic safety \sep aggression speeding 
+\end{keyword}
+
+\end{frontmatter}
+ 
+\section{Introduction}
+Driving related accidents result in over 500 fatalities per year in Kuwait (KUNA, 2016) and represents the third largest cause of death in this small country \citep{Wang2016}. Accidents and accident likelihood have been studied by many researchers with root causes attributed to individual driving styles and driving habits.  The Manchester Driver Behaviour Questionnaire (DBQ) was developed to measure individual concepts and types of driver behaviour and has been used many researchers in many countries including Britain \citep{Reason1990}, Qatar and the United Arab Emirates \citep{Bener2008}, Canada \citep{Cordazzo2014}, Denmark \citep{Martinussen2013}, France \citep{Gu2014}, Finland and the Netherlands \citep{Lajunen2004}, Australia \citep{Stephens2016}, and Turkey \citep{Sumer2003}. 
+The DBQ measures how often drivers experience three categories defined as lapses, errors and violations. For lapses, the questionnaire asked how often drivers try to pull away from traffic lights in third gear, how often they operated the wrong switch, took the wrong lane approaching roundabout or junction, misread signs on exiting roundabouts, how often they felt disorientated, reached a wrong destination, forgot where they had left their car in the car park or hit something when reversing. Lapses are usually considered not to be life-threatening and were more commonly reported by females rather than by male drivers. Age was also found to be statistically associated with lapses, with older drivers tending to report more. 
+
+Errors were defined by Reason (1990) as constituting a failure of planned action and include failures in observation and misjudgements. For errors, respondents were asked how often they failed to see a `Stop' or `Give Way' sign and narrowly avoid colliding with right of way traffic, how often they failed to observe cyclists, pedestrians crossing side roads, failed to check the rear-view mirror before pulling out or changing lanes, and failed to pay attention to the vehicle in front when it was about to turn off the main road. Other errors identified were braking too quickly on a slippery road, or steering the wrong way in a skid, underestimating the speed of an oncoming vehicle when overtaking, and attempting to overtake someone signalling an offside turn. \citep{Reason1990}. 
+Reason (1990) defined violations as  actions that were deliberate deviations from practices considered to be important to maintain safety in a potentially hazardous environment. Questions included how often drivers disregarded the speed limits late at night or very early in the morning, crossed a junction knowing that the traffic lights were changing, drove close to the car in front in an aggressive manner, overtook on the inside, raced with other drivers, showed hostility to a class of road user, or expressed anger verbally. Violations are typical of aggressive behaviour driving. \citep{Reason1990}. 
+
+Based on DBQ results, driver violation scores were found to be a much better predictor of level of accident involvement than the error or lapse score. However, according to Reason et al. (1990), both errors and violations potentially lead to accidents, whereas lapses are unlikely to have a major impact on driving safety.    
+
+Many road safety professionals cite speeding and alcohol as the most important immediate precursors of crashes. The DBQ analyses divide aberrant driving behaviour into three kinds: speeding, drink-driving and other general classes of violations, with speeding being the most frequent violation. 
+
+Lawton et al. (1997) categorised violations according to motivational interpersonal aggression (aggressive violation) and deliberate deviation (ordinary violation). On the other hand, Lajunen and Parker (2001) and Lajunen et al. (1998) stated that violation items are sometimes difficult to differentiate, because of local conditions, snow on the road (Scandinavia) or larger number of cyclists (Holland). Also, culture plays a part. Sounding the horn clearly reflects aggression in Scandinavia, while in Southern Europe; the horn is used much more liberally. Culturally sensitive items need careful consideration for international comparisons. Therefore, the distinction between ordinary violations and aggressive violations may depend on the context and the intention behind the act.   
+
+The literature referred above noted variations in the categories of lapses, errors and violations that reflect true cultural differences. Traffic cultures may vary at regional level. The Manchester Driver Behaviour Questionnaire Item “brake too quickly on slippery road has very different meanings in countries with a long snowy winter and in countries where snow tyres are never required. Similarly, cycling is very much more common as a daily form of transport in the Netherlands than in the hilly part of Turkey, and so attention to cyclists is much more relevant in the former country. Traffic environment and culture play a major role. For example, a striking difference in Muslim culture is that alcohol is not commonly consumed.  Additionally in Gulf states, the percentage of expatriate residents is often very high compared to citizen drivers. In Kuwait, the percentage of non-Kuwaitis is almost 70\% of a total population of 4.4 million in 2016 as seen in Table \ref{tb:residents}.
+
+\begin{table}[H]
+\centering
+\caption{Breakdown of Residents in Kuwait by age in 2016 (CAPI, 2106)}
+\label{tb:residents}
+\begin{tabular}{@{}cccc@{}}
+\toprule
+\textbf{Age Group} & \textbf{Kuwaiti} & \textbf{Non-Kuwaiti} & \textbf{Subtotal} \\ \midrule
+Under 15 & 480,094 & 408,050 & 888,144 \\
+15-19 & 131,870 & 84,974 & 216,844 \\
+20-24 & 128,119 & 182,290 & 310,409 \\
+25-29 & 108,064 & 450,624 & 558,688 \\
+30-34 & 97,673 & 487,447 & 585,120 \\
+35-39 & 82,080 & 461,193 & 543,273 \\
+40-44 & 72,298 & 357,413 & 429,711 \\
+45-49 & 62,616 & 271,408 & 334,024 \\
+50-54 & 52,823 & 172,592 & 225,415 \\
+55-59 & 39,967 & 102,501 & 142,468 \\
+60-64 & 30,812 & 53,639 & 84,451 \\
+\textgreater64 & 51,277 & 41,300 & 92,577 \\
+Total & 1,337,693 & 3,073,431 & 4,411,124 \\
+Percentage of Population & 30.3\% & 69.7\% &  \\ \bottomrule
+\end{tabular}
+\end{table}
+
+Table \ref{tb:residents} shows that there are at least 12\% more cars than licensed drivers Kuwait.
+
+\begin{table}[H]
+\centering
+\caption{Licensed drivers and registered vehicles in Kuwait from 2013-2015 (CSB, 2017)}
+\label{tb:drivers}
+\begin{tabular}{@{}cccc@{}}
+\toprule
+\textbf{Year} & \textbf{Licensed Drivers} & \textbf{Registered Vehicles} & \textbf{Ratio} \\ \midrule
+2013 & 1,497,605 & 1,748,424 & 1.17 \\
+2014 & 1,641,793 & 1,837,372 & 1.12 \\
+2015 & 1,686,138 & 1,925,168 & 1.14 \\ \bottomrule
+\end{tabular}
+\end{table}
+
+Aggressive driving behaviour has various kinds of definitions. The most comprehensive definition is as follows: “The operation of a motor vehicle in a manner that endangers or is likely to endanger people or property”.  The factors listed by James and Nahl (2000) as representative of aggressive driving are: Running stop signals, Blocking intersections, Failing to yield right-of-way, Weaving in/out of traffic, Speeding above the limit, Tailgating, Failure to use indicators when required, Changing speed erratically, Blocking other vehicles, Communicating threats or insults with voice, Gestures, or sounding the horn unnecessarily, Intentionally breaking suddenly, and Chasing other vehicles. Other authors add additional factors, such as careless driving, failure to stop for pedestrians, and cell phone usage  \citep{James2000}.
+
+\section{Material and methods}
+
+\subsection{Description of the questionnaire survey data contents}
+ The questionnaire consists of various variables which are grouped into six sections (parts). The first section is General Information and consists of general demographic information such asage, sex, nationality, residential area, occupation, living place, education level, and marital status. \\
+The second section is Driving Characteristics and consists of variables related to the vehicle use in terms of distance travelled annually (kilometres), driving experience, seatbelt usage, speeding, vehicle type and activities  whilst driving. 
+\\ 
+The third section is the Accidents history and requests information variables related to accident involved in, accident causes, and types of injuries suffered (if any).
+\\
+The fourth section is Driver Behaviour and consists of variables related to driving behaviour. These variables are categorised as Violations (10 questions), Errors (8 questions) and Lapses (8 questions). 
+\\
+These 26 questions were further classified according to various aspects, such as lack of attention, speeding, overtaking, ignoring priorities, passing red traffic lights, not leaving enough distance from the vehicle in front, and carelessness while driving. The responses to the questions were taken on a six-point Likert Scale as follows: 
+
+\begin{itemize}
+\item{0 = Never}
+\item{1 = Hardly ever}
+\item{2 = Occasionally}
+\item{3 = Quite often}
+\item{4 = Frequently}
+\item{5 = Nearly all the time}
+\end{itemize} 
+
+The fifth section is Driving Strengths and Weakness and consists of 20 questions related to the behaviour of dangerous driving situations and reactions. The responses to the questions were also taken on a five-point Likert Scale.
+
+The sixth section is Road Safety Strategies and consists of variables related to remedial measures such as road design, enforcement of traffic laws, and road safety campaigns .\\
+
+The last page of the questionnaire provided free space for Suggestions and Comments. \\
+
+\subsection{Questionnaire survey data collection}
+
+A pilot survey of 50 questionnaires was distributed to drivers in Kuwaiti in November 2016 to identify potential problems of design. 
+
+In the main survey, from 3 December 2016 to 15 May 2017, 700 questionnaires were distributed to a random sample of drivers at various locations in Kuwait.  Of the returned surveys, 164  were rejected, either because they were incomplete or because answers were considered to be unrealistic, giving a total number of respondents of 536 and an overall response rate of 76\%. 
+        
+\subsection{Characteristics of respondents}
+
+A breakdown of the survey respondents is shown in Table \ref{tb:respondents}.  The overwhelming majority were male and Kuwaiti. Over half held a bachelors degree or higher.  The mean age of the participants was 31.8, with the youngest being 18 and the oldest 72. The response rate from Kuwaiti drivers was higher than from non-Kuwaiti drivers (79.5\% and 20.5\%, respectively). 
+
+\begin{table}[H]
+\centering
+\caption{Background characteristics of respondents.}
+\label{tb:respondents}
+\begin{tabular}{@{}lc@{}}
+\toprule
+\textbf{Sex} &  \\ \midrule
+Male & 74.0\% \\
+Female & 26.0\% \\ \midrule
+\textbf{Education} &  \\ \midrule
+High school or below & 17.9\% \\
+Diploma & 27.2\% \\
+Bachelors degree & 42.4\% \\
+Postgraduate & 12.5\% \\ \midrule
+\textbf{Martial status} &  \\ \midrule
+Married & 49.1\% \\
+Unmarried & 50.9\% \\ \midrule
+\textbf{Citizenship} &  \\ \midrule
+Kuwaiti & 79.5\% \\
+non-Kuwaiti & 20.5\% \\ \bottomrule
+\end{tabular}
+\end{table}
+
+In Table \ref{tab:drive-exp}, over 59\% of the respondents had more than 5 years of driving experience.
+
+\begin{table}[H]
+\centering
+\caption{Driving Experience of Respondents}
+\label{tab:drive-exp}
+\begin{tabular}{@{}ccc@{}}
+\toprule
+\textbf{Years of driving} & \textbf{Frequency} & \textbf{Percentage} \\ \midrule
+\textless 2 & 60 & 11.2\% \\
+2 - 5 & 156 & 29.1\% \\
+5 - 10 & 93 & 17.4\% \\
+\textgreater10 & 227 & 42.3\% \\
+Total & 536 & 100.0\% \\ \bottomrule
+\end{tabular}
+\end{table}
+
+Annual kilometres ranged from $<$5,000 km to $>$ 40,000 km. Table \ref{tab:annualkm} and Figure Figure 1 shows the distribution of the annual average kilometres for men and women separately: 21,768 km for men and 13,964 km for females (on average 19,730 km). This shows that men are driving around 61\% more than the distance that females are driving.
+
+\begin{table}[H]
+\centering
+\caption{Frequency distribution of average km/year driven.}
+\label{tab:annualkm}
+\begin{tabular}{@{}ccc@{}}
+\toprule
+\textbf{km/year} & \textbf{Frequency} & \textbf{Percent} \\ \midrule
+\textless5,000 & 33 & 6.2\% \\
+5,000-10,000 & 101 & 18.8\% \\
+10,000-15,000 & 112 & 20.9\% \\
+15,000-20,000 & 56 & 10.4\% \\
+20,000-25,000 & 63 & 11.8\% \\
+25,000-30,000 & 56 & 10.4\% \\
+30,000-35,000 & 35 & 6.5\% \\
+35,000-40,000 & 28 & 5.2\% \\
+\textgreater40,000 & 52 & 9.7\% \\
+Total & 536 & 100.0\% \\ \bottomrule
+\end{tabular}
+\end{table}
+
+Figure \ref{fig:avekmgender} shows the average driven km/yr for men and women, with men reporting they drive over 61\% more than the women do.
+%
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{images/pic1}  %assumes jpg extension
+\caption{Average km/yr based on gender.}
+\label{fig:avekmgender}
+\end{figure}
+%
+
+\subsubsection{Accidents}
+From the 536 respondents, 71\% reported having been involved in one or more accidents during their driving time, and 29\% had not. For those involved in previous accidents, 80.3\%  said the accidents involved property damage only (PDO), while 19.4\% reported their accidents caused injuries. Only one respondent reported a fatal accident. Using this data, we estimated a fatal injury ratio of 1 death per 74 injuries. The types of accidents are summarized in Table \ref{tab:accidents}.
+
+\begin{table}[H]
+\centering
+\caption{Types of accidents reported by respondents.}
+\label{tab:accidents}
+\begin{tabular}{@{}ccc@{}}
+\toprule
+\textbf{Accident type} & \textbf{Frequency} & \textbf{Percent} \\ \midrule
+PDO & 305 & 80.3\% \\
+Injury & 74 & 19.4\% \\
+Fatality & 1 & 0.3\% \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Accident causation}
+The respondents were asked about the causes of accidents (either their own fault or another driver's). The results in Table \ref{tab:causes} show that speed represents 33.9\% of accident causes and careless driving represents 17.1\%. General traffic violations and other combinations contributed 35.8\% and 11.8\% respectively.  Accidents involving alcohol were only 1.3\% in the survey.  It should be noted that Kuwait is a dry country that prohibits the import and sale of alcoholic beverages. 
+
+\begin{table}[H]
+\centering
+\caption{Accident causes}
+\label{tab:causes}
+\begin{tabular}{@{}ccc@{}}
+\toprule
+\textbf{Accident factors} & \textbf{Frequency} & \textbf{Percent} \\ \midrule
+Violations & 130 & 35.8\% \\
+Speeding & 123 & 33.9\% \\
+Carelessness & 62 & 17.1\% \\
+Others & 43 & 11.8\% \\
+Alcohol involved & 5 & 1.4\% \\
+Total & 363 & 100.0\% \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Violations}
+The respondents were asked if they obtained right-light, speeding, or parking tickets. Speeding and parking were the most common violations in Kuwait \citep{CSB2017}. The results in Table \ref{tab:violations} show that speeding was the most frequent type of violation.
+
+\begin{table}[H]
+\centering
+\caption{Reported violations}
+\label{tab:violations}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Violation} & \textbf{Frequency} & \textbf{Percent} \\ \midrule
+Over Speed & 157 & 37.6\% \\
+Parking & 129 & 30.9\% \\
+Red-light & 44 & 10.5\% \\
+Parking and Over Speed & 28 & 6.7\% \\
+Red-light and Over Speed & 26 & 6.2\% \\
+Red-light, parking and Over Speed & 24 & 5.7\% \\
+Red-light and parking & 7 & 1.7\% \\
+Others & 3 & 0.7\% \\
+Total & 418 &  \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Activities while driving}
+The respondents were asked about what activities that they engage in while driving. The results in Table \ref{tab:activities} show that respondents often use their mobile phones while driving, despite being illegal to do so in Kuwait.
+
+\begin{table}[H]
+\centering
+\caption{Driving activities}
+\label{tab:activities}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Activity} & \textbf{Frequency} & \textbf{Percent} \\ \midrule
+Using mobile phone & 229 & 55.6\% \\
+Other activities & 83 & 20.1\% \\
+Smoking & 45 & 10.9\% \\
+Children in front & 34 & 8.3\% \\
+Folding legs & 16 & 3.9\% \\
+Reading newspaper & 3 & 0.7\% \\
+Drinking alcohol & 2 & 0.5\% \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Seat belt usage}
+Only 40.7\% of the respondents said they regularly use seat belts while 43.7\% said they occasionally used them. A small group reported, 15.7\% , reported not using seat belts at all. The reason behind of those using seat belts regularly  and those who use them occasionally  are shown in Table \ref{tab:excuses}. 
+
+\begin{table}[H]
+\centering
+\caption{Reasons why seat belts are not regularly used.}
+\label{tab:excuses}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Reason} & \textbf{Frequency} & \textbf{Percent} \\ \midrule
+Discomfort & 90 & 28.9\% \\
+Forget to use & 79 & 25.4\% \\
+Inconvenience & 53 & 17.0\% \\
+Combination of reasons & 26 & 8.4\% \\
+Fear of being trapped & 19 & 6.1\% \\
+Other reasons & 18 & 5.8\% \\
+Interfered with clothes & 15 & 4.8\% \\
+Not Necessary & 11 & 3.5\% \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Summary of respondents}
+How does this sample compare with Kuwaiti population as a whole? 
+
+\section{Results of DBQ}
+
+\subsection{Reliability Analysis}
+A lower bound reliability estimate was computed for each category (Violations, Errors and Lapses) separately using Cronbach's $\alpha$,  a commonly used statistic for estimating reliability of test scores \citep{Warrens2014}. The $\alpha$ of each category was calculated using SPSS software and represents the average covariance between item-pairs and variance of the total score and given by
+
+\begin{equation}
+\label{eq:alpha}
+\alpha = \frac{N*\bar{c}}{\bar{\sigma^{2}}+(N-1)*\bar{c})}
+\end{equation}
+
+\noindent
+where $N$ is the number of item-pair being compared, $bar{c}$ is the average covariance between item pairs, and $\bar{\sigma^{2}}$ is the average variance. Using Cronbach's $\alpha$ as a reliability indicator is of test is common within literature, but studies show that is should not be a measure of internal consistency \citep{Sijtsma2009, Tavokol2011}.
+
+\begin{table}[H]
+\centering
+\caption{Reliability analysis using Cronbach's $\alpha$.}
+\label{tab:alpha}
+\begin{tabular}{@{}cc@{}}
+\toprule
+\textbf{Item-pair} & \textbf{$\alpha$} \\ \midrule
+Violation & 0.867 \\
+Errors & 0.817 \\
+Lapses & 0.847 \\ \bottomrule
+\end{tabular}
+\end{table} 
+
+Results in Table \ref{tab:alpha} show a good range of reliability between variables. Scores $>$ 0.9 may reflect redundant or duplicate questions \citep{Streiner2003}.
+
+\subsection{Principal Component Analysis}
+The dimensionality of the 10 items in the Violations category was analysed using principal component analysis.  Three criteria were used to determine the number of factors to rotate:
+\begin{itemize}
+\item{the \textit{a priori} hypothesis that the measure was unidimensional}
+\item{the screen test}
+\item{interpretability of the factor solution}
+\end{itemize}
+
+The scree plot in Figure ??? indicated that our initial hypothesis of unidimensionality was incorrect. Two factors were rotated using a varimax rotation procedure. The rotated solution yielded two interpretable factors: speed related violations and anger related violations. Each of the two factors consist of 5 items. Two items, V6 and V10, were in both the anger related factors and speed related factor. As a result, these two items were moved to the speed related factor. The final factors consist of 7 items in the speed related factor (V1, V2, V3, V4, V6, V7, and V10)  and 3 items in the anger related factor (V5, V8, and V9). 
+
+PCA was also used to find factors of 8 items related with the Errors category and 8 items of the Lapses category. In both cases, these analyses the rotated solution yielded only one interpretable factor.
+
+\subsection{Overall Speed related behaviour score (violation) with other factors}
+
+The overall speed related score was introduced as a dependent variable with other factors (Age, Gender, Education Level, Marital Status, Nationality, and Driver Experience) as an independent variable. An overall speed related score (speed related violation) was calculated as an average of the 7 questions for each individual driver (V1, V2, V3, V4, V6, V7, and V10). The t-test was used to compare significant differences in overall speed related scores between two independent groups (such as Gender, Marital Status, and Nationality). When the analysis involved three or more groups, such as Age, Education Level and Driver Experience, the one-way ANOVA technique was used. Dunnett's C test (a test that does not assume equal variances) was used to test the significant differences between a single group and multiple groups. In both the t-test and One Way ANOVA, the level of significance was set at the 95\% confidence interval level (p$<$ 0.05). 
+
+\subsubsection{Age (Age versus Speed Related Score for violation) }
+
+A one-way ANOVA was conducted to evaluate the relationship between age and the Speed related score. The hypothesis assumed that the younger age group drivers have more aggressive driving behaviour on the road than the older age group drivers. The independent variable tested, age, had five age ranges: 18-24, 25-29, 30-39, 40-49 \& 50-above. The dependent variable was the speed related score. A higher speed related score indicated more aggressive behaviour on the road. The ANOVA showed statistical significance, F(4, 531) = 55.465, p $<$ .0001.
+
+Follow-up tests were conducted to evaluate pair wise differences among the means. The \textit{post hoc} comparisons were conducted using Dunnett's C test. The results of these tests, as well as the means and the standard deviations for the four age groups, are given in Table 5.8. 
+
+There were significant differences in the means between the age groups (18-24, 25-29), (18-24, 30-39), (18-24, 40-49), (18-24, 50-above), (25-29, 40-49), (25-29, 50-above), (30-39, 50-above),  but no significant differences in the means between the age groups(25-29, 30-39) (30-39, 40-49). 
+
+The drivers of the age group 18-24 showed the highest speed related behaviour (mean = 2.48), whereas the drivers of the age group 50-above showed the lowest aggressive behaviour (mean= 0.88) as shown in Table \ref{tab:experience}.
+
+\begin{table}[H]
+\centering
+\caption{Experience vs. speed related scores.}
+\label{tab:experience}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}cccccccccc@{}}
+\toprule
+\textbf{Age Group} & \textbf{N} & \textbf{Mean} & \textbf{SD} & \textbf{18-24} & \textbf{25-29} & \textbf{30-39} & \textbf{40-49} & \textbf{F} & \textbf{sig} \\ \midrule
+18-24 & 225 & 2.48 & 0.89 &  &  &  &  & 55.465 & 0.000 \\
+25-29 & 72 & 1.82 & 1.02 & * &  &  &  &  &  \\
+30-39 & 92 & 1.57 & 1.11 & * & NS &  &  &  &  \\
+40-49 & 85 & 1.29 & 0.76 & * & * & NS &  &  &  \\
+50-above & 62 & 0.88 & 0.61 & * & * & * & * &  &  \\  \midrule
+\textbf{Education level} & \textbf{N} & \textbf{Mean} & \textbf{SD} & \textbf{Up to High school} & \textbf{Diploma} & \textbf{Bachelor} & \textbf{} & \textbf{F} & \textbf{sig} \\  \midrule
+Up to High school & 96 & 2.11 & 1.15 &  &  &  &  & 20.136 & 0.000 \\
+Diploma & 146 & 2.21 & 0.98 & NS &  &  &  &  &  \\
+Bachelor & 227 & 1.74 & 1.04 & * & * &  &  &  &  \\
+Postgraduate & 67 & 1.13 & 0.81 & * & * & * &  &  &  \\  \midrule
+\textbf{Groups} & \textbf{N} & \textbf{M} & \textbf{SD} & \textbf{Less than 2 years} & \textbf{2-5 years} & \textbf{5-10 years} & \textbf{} & \textbf{F} & \textbf{sig} \\  \midrule
+Less than 2 years & 60 & 2.12 & 0.92 &  &  &  &  & 43.118 & 0.000 \\
+2-5 years & 156 & 2.22 & 0.94 & NS &  &  &  &  &  \\
+5-10 years & 93 & 1.74 & 1.11 & NS & * &  &  &  &  \\
+More than 10 years & 227 & 1.14 & 0.94 & * & * & * &  &  &  \\ \bottomrule
+\end{tabular}
+} %end resize
+\end{table}
+
+The results of the one-way ANOVA supported the hypothesis that the younger age group displays more aggressive driving on the road than the older age group. Young drivers, compared with other groups, are more likely to underestimate the probability of specific risks caused by traffic situations Brown \& Gorger, 1988; Deery, 1999) and they overestimate their own driving skills (Moe, 1986).
+
+\subsubsection{Gender (Gender versus Speed related Score)}
+
+A t -test was conducted to evaluate the hypothesis that male drivers have more aggressive driving behaviour on the road than female drivers. The test was significant, t (270.231) = 3.015, p = 0.003. The results of the t -test supported the hypothesis that male drivers (M = 1.94, SD = 1.099, n = 396) on average have more aggressive driving behaviour than female drivers (M = 1.639, SD = 0. 984, n = 140) as shown in Table \ref{tab:sexdiff}. These results were similar to the results presented by Laapotti et al. (2003), which evaluated driver attitudes towards road safety in Finland \citep{Laapotti2003}. Their study revealed that female drivers also had a more positive attitude towards road safety and rules than male drivers.
+
+\begin{table}[H]
+\centering
+\caption{Results of t-tests for speed related variables.}
+\label{tab:sexdiff}
+\begin{tabular}{@{}cccccc@{}}
+\toprule
+\textbf{Gender} & \textbf{n} & \textbf{Mean} & \textbf{Std Dev} & \textbf{T} & \textbf{sig} \\ \midrule
+Male & 396 & 1.9402 & 1.09899 & 3.015 & 0.003 \\
+Female & 140 & 1.6393 & .98366 &  &  \\ \midrule
+\textbf{Nationality} & \textbf{n} & \textbf{Mean} & \textbf{Std Dev} & \textbf{T} & \textbf{sig} \\ \midrule
+Kuwait & 426 & 2.0556 & 1.03820 & 8.77 & 0.000 \\
+Non-Kuwaiti & 110 & 1.1100 & .88130 &  &  \\ \midrule
+\textbf{marital status} & \textbf{n} & \textbf{Mean} & \textbf{Std Dev} & \textbf{T} & \textbf{sig} \\ \midrule
+Single & 263 & 2.277 & 0.96431 & 9.466 & 0.000 \\
+Married & 273 & 1.461 & 1.029 &  &  \\ \midrule
+\textbf{Accident involved} & \textbf{n} & \textbf{Mean} & \textbf{Std Dev} & \textbf{T} & \textbf{sig} \\ \midrule
+Yes & 380 & 1.9516 & 1.07849 & 3.082 & 0.002 \\
+No & 156 & 1.6423 & 1.04579 &  &  \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Nationality (Nationality versus Speed related Score)}
+
+A t -test was conducted to evaluate the hypothesis that Kuwaiti drivers have more aggressive driving behaviour than non-Kuwaiti drivers. The test was significant, t (534) = (-14.55), p $<$ 0.000. The results of the independent-sample t -test supported the hypothesis that Kuwaiti drivers (M = 2.005, SD = 0.1.038, n = 426) on the average are more aggressive drivers than non-Kuwaiti drivers (M = 1.11, SD = 0.881, n =110 ) as shown in Table \ref{tab:sexdiff}. 
+
+
+One reason is that there are more young Kuwaiti drivers than young non-Kuwaiti drivers in the country's population and the sample as well (95\% of Kuwaiti drivers are in the age group 18-24 in the sample). The independent-sample t-test was run again, excluding 225 cases of young drivers in the age range 18-24. As a result, Kuwaiti drivers still had more aggressive driving behaviour than non-Kuwaiti drivers. The test was significant, t (309) = 5.594, p $<$ .001. (M = 1.613, SD = 0.978, n = 212) (M = .981, SD = 0.806,  n = 99). 
+
+Several possible reasons exist that explain why non-Kuwaitis are more concerned about having to pay fines than Kuwaiti drivers. Expatriates must have a driver's license from their home country, which may have more rigorous requirements. Expatriate drivers are often professional drivers and responsible for fines if they receive them. Expatriate drivers also tend to have lower financial status and therefore try to avoid unnecessary fines and expenses. Lastly, expatriate drivers do not have the same influence, or \textit{ wasta}, within the traffic department that allows many Kuwaitis to avoid paying fines.
+
+The practical implication of the last explanation is that fines on Kuwaiti citizens are ineffective. It might be an idea to have penalties linked to financial status (Lappi-Seppala, 2004). 
+
+\subsubsection{Marital status (Marital status versus Speed related Score)}
+
+An independent-sample t-test was conducted to evaluate the hypothesis that drivers who were single had more aggressive driving behaviour than drivers who were married. The test was significant: t (533.62) = 9.466, p $<$ 0.001. The results of the independent-sample t-test initially supported the hypothesis that single drivers (M = 2.277, SD = 0.965, n=263) on average had more aggressive driving behaviour than married drivers (M = 1.461, SD = 1.029, n= 273) as shown in Table \ref{tab:sexdiff}.
+
+However, there were more young single drivers than married drivers in the sample (89\% of drivers in the age group 18-24 were single). Married drivers perhaps have more concern, possibly due to family responsibilities. There is an implied need for further education and training of young, unmarried drivers, either through the media or driving schools in order to increase their feeling of responsibility and improve their hazard perception. 
+
+\subsubsection{Accident involvement}
+
+An independent-sample t-test was conducted to evaluate the hypothesis that drivers who were involved with one or more accidents, had more aggressive driving behaviour than drivers who were not involved in accidents. The test was significant: t (296.757) = 3.082, p $<$ 0.002. The results of the independent-sample t-test initially supported the hypothesis that drivers with one or more accident showed more aggressive behaviour (M = 1.951, SD = 1.078, n = 380) whereas drivers with no accidents showed lower aggressive behaviour (M = 1.614, SD = 1.0145,  n = 156) as shown in Table \ref{tab:sexdiff}.
+
+\subsubsection{Overall anger related behaviour score (violation) with other factors}
+
+The overall anger related score has been introduced as a dependent variable and the other factors (Age, Gender, Education Level, Marital Status, Nationality, Driver Experience,) are independent variables. An overall Ager related score (Anger related violation) is calculated as an average of the 3-questions for each individual driver (V5, V8, V9).  The t-test is used to compare the significant differences in overall Anger related scores between two independent groups (such as Gender, Marital Status,  and Nationality). A higher anger related score indicates more aggressive behaviour on the road. The ANOVA was significant, F (4, 531) = 55.465, p $<$ .0001 as shown in Table \ref{tab:anger}.
+
+\subsubsection{Age versus Anger related behaviour score (violation)}
+
+There were significant differences in the means between the age groups, (18-24, 30-39), (18-24, 40-49), (18-24, 50-above), (25-29, 50-above), but no significant differences in the means between the age groups (18-24, 25-29) ,(25-29, 30-39), (25-29 , 40-49), (30-39, 40-49)  (30-39, 50-above)  and (40-49- 50-above)  were found. The drivers of the age group 18-24 showed the highest anger related behaviour (mean = 2.49), whereas the drivers of the age group 50-above showed the lowest aggressive behaviour (mean= 1.12) as shown in Table \ref{tab:anger}.
+
+\subsubsection{Anger related score vs Education level}
+
+As regard the Anger related score viruses Education level, the ANOVA was significant, F (3, 532) = 9.283, p $<$ .0001 but the only significant differences are between the postgraduate and the other education level groups. The drivers of the up to high school showed the highest anger related behaviour (mean = 2.32), whereas the drivers of the postgraduate group showed the lowest aggressive behaviour (mean= 1.47) as shown in Table \ref{tab:anger}.
+
+\subsubsection{Anger related score viruses year of driving experience}
+The ANOVA was also significant between the Anger related score and the year of driving, F (3, 532) =20.48, p $<$ .0001 but the only significant differences are between more than 10 years driving experience and  the other year of divining experience groups. The driving experience of 2-5 years showed the highest anger related behaviour (mean = 2.46), whereas the drivers of more than 10 years showed the lowest aggressive behaviour (mean= 1.62) as shown in Table \ref{tab:anger}.
+
+\begin{table}[H]
+\centering
+\caption{More tests of different variables.}
+\label{tab:anger}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}lccccccccc@{}}
+\toprule
+\textbf{Age Group} & \textbf{N} & \textbf{Mean} & \textbf{SD} & \textbf{18-24} & \textbf{25-29} & \textbf{30-39} & \textbf{40-49} & \textbf{F} & \textbf{sig} \\ \midrule
+18-24 & 225 & 2.49 & 1.12 &  &  &  &  & 19.35 & 0.000 \\
+25-29 & 72 & 2.07 & 1.40 & NS &  &  &  &  &  \\
+30-39 & 92 & 1.76 & 1.07 & * & NS &  &  &  &  \\
+40-49 & 85 & 1.63 & 0.913 & * & NS & NS &  &  &  \\
+50-above & 62 & 1.38 & 0.870 & * & * & NS & NS &  &  \\ \midrule
+\textbf{Education level} & \textbf{N} & \textbf{Mean} & \textbf{SD} & \textbf{Up to High school} & \textbf{Diploma} & \textbf{Bachelor} & \textbf{} & \textbf{F} & \textbf{sig} \\ \midrule
+Up to High school & 96 & 2.32 & 1.25 &  &  &  &  & 9.24 & 0.000 \\
+Diploma & 146 & 2.24 & 1.098 & NS &  &  &  &  &  \\
+Bachelor & 227 & 1.97 & 1.19 & NS & NS &  &  &  &  \\
+Postgraduate & 67 & 1.46 & 0.87 & * & * & * &  &  &  \\ \midrule
+\textbf{Groups} & \textbf{N} & \textbf{M} & \textbf{SD} & \textbf{Less than 2 years} & \textbf{2-5 years} & \textbf{5-10 years} & \textbf{} & \textbf{F} & \textbf{sig} \\ \midrule
+\textless 2 years & 60 & 2.36 & 1.10 &  &  &  &  & 20.48 & 0.000 \\
+2-5 years & 156 & 2.46 & 1.09 & NS &  &  &  &  &  \\
+5-10 years & 93 & 2.19 & 1.39 & NS & NS &  &  &  &  \\
+\textgreater10 years & 227 & 1.62 & 0.99 & * & * & * &  &  &  \\ \bottomrule
+\end{tabular}
+} %end resize
+\end{table}
+
+\subsubsection{Gender versus Anger related Score}
+
+An independent-sample t -test was conducted to evaluate if there is a significant differences between male and female drivers in terms of anger related score. There is not significant difference between male and female. The female mean = 2.095 and the male mean= 2.029 as shown in Table \ref{tab:married}.
+
+\subsubsection{Nationality versus Anger related Score}
+
+An independent-sample t -test was conducted to evaluate the hypothesis that Kuwaiti drivers have more aggressive driving behaviour than non-Kuwaiti drivers in terms of anger related score. The test shows a significant difference between Kuwaiti and non-Kuwaiti: t (186.45) = 6.19, p $<$ 0.001. The Kuwaiti mean = 2.19 and non-Kuwaiti =1.49 as shown in Table \ref{tab:married}.
+
+\subsubsection{Marital status versus Anger related Score}
+
+An independent-sample t -test was conducted to evaluate the hypothesis that single drivers have more aggressive driving behaviour than married  drivers in terms of anger related score. The test shows a significant difference between single and married drivers: t (530.834) = 6.21, p $<$ 0.001. The single mean = 2.35 and married =1.74 as shown in Table \ref{tab:married}.
+
+\begin{table}[H]
+\centering
+\caption{Tests on married and anger}
+\label{tab:married}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}cccccc@{}}
+\toprule
+\textbf{Gender} & \textbf{n} & \textbf{Mean} & \textbf{Std. Deviation} & \textbf{T} & \textbf{sig} \\ \midrule
+male & 396 & 2.03 & 1.138 & -0.57 & 0.57 \\
+female & 140 & 2.095 & 1.261 &  &  \\ \midrule
+\textbf{Nationality} & \textbf{n} & \textbf{Mean} & \textbf{Std. Deviation} & \textbf{T} & \textbf{sig} \\ \midrule
+Kuwaiti & 426 & 2.19 & 1.161 & 6.129 & 0.000 \\
+Non-Kuwaiti & 110 & 1.49 & 1.034 &  &  \\ \midrule
+\textbf{Marital status} & \textbf{n} & \textbf{Mean} & \textbf{Std. Deviation} & \textbf{T} & \textbf{sig} \\ \midrule
+Single & 263 & 2.356 & 1.154 & 6.212 & 0.000 \\
+Married & 273 & 1.748 & 1.109 &  &  \\ \midrule
+\textbf{Accident involved} & \textbf{n} & \textbf{Mean} & \textbf{Std. Deviation} & \textbf{T} & \textbf{sig} \\ \midrule
+Yes & 380 & 2.096 & 1.151 & 1.51 & 0.132 \\
+No & 156 & 1.925 & 1.209 &  &  \\ \bottomrule
+\end{tabular}
+} %end resize
+\end{table}
+
+\subsection{Overall Errors score with other factors}
+
+\subsubsection{Age groups and Errors}
+
+The ANOVA was significant, F (4, 531) = 10., p $<$ .0001 There were significant differences in the means between the age groups, (18-24, 30-39), (18-24, 40-49),  (18-24, 50-above), (25-29, 50-above) (30-39, 50-above), (40-49- 50-above)  , but no significant differences in the means between the age groups (18-24, 25-29) , (25-29, 30-39), (25-29 , 40-49), (30-39, 40-49) were found. The drivers of the age group 18-24 showed the highest error score (mean = 1.46), whereas the drivers of the age group 50-above showed the lowest error score (mean= 0.75) as shown in Table \ref{tab:errors}.
+
+\subsubsection{Education level and Errors}
+
+As regard the Error score viruses Education level, the ANOVA was significant, F (3, 532) = 4.09, p $<$ .007 but the only significant differences are between the postgraduate and the other education level groups. The drivers of the up to high school showed the highest anger related behaviour (mean = 1.44), whereas the drivers of the postgraduate group showed the lowest aggressive behaviour (mean= 0.95) as shown in Table \ref{tab:errors}.
+
+\subsubsection{Experience and Errors}
+
+The ANOVA was also significant between the Errors score and the year of driving, F (3, 532) =6.9, p $<$ .0001 but the only significant differences are between more than 10 years driving experience with less than 2 years and   more than 10 years driving experience with 2- 5 years The driving experience of less than 2 years showed the highest errors score (mean = 1.49), whereas the drivers of more than 10 years showed the lowest Errors score behaviour (mean= 1.06) as shown in Table \ref{tab:errors}.
+
+\begin{table}[H]
+\centering
+\caption{Tests on errors}
+\label{tab:errors}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}cccccccccc@{}}
+\toprule
+\textbf{Age Group} & \textbf{n} & \textbf{Mean} & \textbf{SD} & \textbf{18-24} & \textbf{25-29} & \textbf{30-39} & \textbf{40-49} & \textbf{F} & \textbf{sig} \\ \midrule
+18-24 & 225 & 1.46 & 0.905 &  &  &  &  & 10.03 & 0.000 \\
+25-29 & 72 & 1.24 & 0.993 & NS &  &  &  &  &  \\
+30-39 & 92 & 1.076 & 0.771 & * & NS &  &  &  &  \\
+40-49 & 85 & 1.18 & 0.877 & * & NS & NS &  &  &  \\
+50-above & 62 & 0.75 & 0.605 & * & * & * & * &  &  \\ \midrule
+\textbf{Education level} & \textbf{N} & \textbf{Mean} & \textbf{SD} & \textbf{Up to High school} & \textbf{Diploma} & \textbf{Bachelor} & \textbf{} & \textbf{F} & \textbf{sig} \\ \midrule
+Up to High school & 96 & 1.44 & 0.868 &  &  &  &  & 4.094 & 0.007 \\
+Diploma & 146 & 1.39 & 0.802 & NS &  &  &  &  &  \\
+Bachelor & 227 & 1.27 & 0.975 & NS & NS &  &  &  &  \\
+Postgraduate & 67 & 0.96 & 0.734 & * & * & * &  &  &  \\ \midrule
+\textbf{Groups} & \textbf{N} & \textbf{M} & \textbf{SD} & \textbf{\textless 2 years} & \textbf{2-5 years} & \textbf{5-10 years} & \textbf{} & \textbf{F} & \textbf{sig} \\ \midrule
+\textless 2 years & 60 & 1.49 & 0.84 &  &  &  &  & 6.9 & 0.000 \\
+2-5 years & 156 & 1.39 & 0.9 & NS &  &  &  &  &  \\
+5-10 years & 93 & 1.37 & 1.04 & NS & NS &  &  &  &  \\
+\textgreater 10 years & 227 & 1.06 & 0.8 & * & * & NS &  &  &  \\ \bottomrule
+\end{tabular}
+} %end resize
+\end{table}
+
+\subsubsection{Gender and Errors}
+An independent-sample t -test was conducted to evaluate if there is a significant differences between male and female drivers in terms of errors score. The test was not significant difference between male and female. The female mean = 1.3 and the male mean= 1.24 as shown in Table \ref{tab:errgender}.
+
+\subsubsection{Nationality and errors }
+An independent-sample t -test was conducted to evaluate if there is a significant differences between Kuwaiti and non-Kuwaiti drivers in terms of errors score. The test was not significant difference between Kuwaiti and non-Kuwaiti. The Kuwaiti mean = 1.29 and the male mean= 1.11 as shown in Table \ref{tab:errgender}.
+
+\subsubsection{Marital Statues and errors}
+An independent-sample t -test was conducted to evaluate the hypothesis that single drivers more errors than married drivers. There is a significant difference between single and married: t (526.41) = 2.91, p $<$ 0.004. The single mean = 1.37 and married mean =1.14 as shown in Table \ref{tab:errgender}.
+
+\begin{table}[H]
+\centering
+\caption{My caption}
+\label{tab:errgender}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}cccccc@{}}
+\toprule
+\textbf{Gender} & \textbf{n} & \textbf{Mean} & \textbf{Std. Deviation} & \textbf{T} & \textbf{sig} \\ \midrule
+male & 396 & 1.24 & 0.85 & -0.708 & 0.48 \\
+Female & 140 & 1.31 & 0.99 &  &  \\  \midrule
+\textbf{Nationality} & \textbf{n} & \textbf{Mean} & \textbf{Std. Deviation} & \textbf{T} & \textbf{sig} \\  \midrule
+Ku & 426 & 1.29 & 0.87 & 1.775 & 0.078 \\
+Non-Ku & 110 & 1.11 & 0.92 &  &  \\  \midrule
+\textbf{marital status} & \textbf{n} & \textbf{Mean} & \textbf{Std. Deviation} & \textbf{T} & \textbf{sig} \\  \midrule
+Single & 263 & 1.37 & 0.92 & 2.910 & 0.004 \\
+Married & 273 & 1.14 & 0.85 &  &  \\  \midrule
+\textbf{Accident involved} & \textbf{n} & \textbf{Mean} & \textbf{Std. Deviation} & \textbf{T} & \textbf{sig} \\  \midrule
+Yes & 380 & 1.26 & 0.82 & -0.019 & 0.985 \\
+No & 156 & 1.25 & 1.03 &  &  \\ \bottomrule
+\end{tabular}
+} %end resize
+\end{table}
+
+\subsection{Overall Lapses score with other factors}
+
+\subsubsection{Age groups and Lapses}
+
+ The ANOVA was significant, F (4, 531) = 8.223., p $<$ .0001. There were  a significant differences in the means between the age groups, (18-24,40-50), (18-24, 50-above), (25-29, 50-above), (30-39, 50-above)  but no significant differences in the means between the age groups (18-24, 25-29) , (18-24, 30-39) (25-29, 30-39), (25-29 , 40-49), (30-39, 40-49)   (40-49- 50-above) were found. The drivers of the age group 25-29 showed the highest lapses score (mean = 1.89), whereas the drivers of the age group 50-above showed the lowest lapses score (mean= 1.14) as shown in Table \ref{tab:educationlapses}.
+
+\subsubsection{Education level and Lapses}
+
+As regard the Lapses score viruses Education level, the ANOVA was significant, F (3, 532) =3.125, p $<$ .026 but the only significant differences are between the postgraduate and the other education level groups. The drivers of the up to high school showed the highest lapses score (mean = 1.75), whereas the drivers of the postgraduate group showed the lapses score (mean= 1.31) as shown in Table \ref{tab:educationlapses}.
+
+\subsubsection{Experience and Lapses}
+
+The ANOVA was also significant between the lapses score and the year of driving, F (3, 532) =7.11, p $<$ .0001 but the only significant differences are between more than 10 years driving experience and the other driving experience groups The driving experience of less than 2 years showed the highest lapses score (mean = 1.94), whereas the drivers of more than 10 years showed the lowest lapses score (mean= 1.43) as shown in Table \ref{tab:educationlapses}.
+
+\begin{table}[H]
+\centering
+\caption{Tests on lapses}
+\label{tab:educationlapses}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}cccccccccc@{}}
+\toprule
+\textbf{Age Group} & \textbf{n} & \textbf{Mean} & \textbf{SD} & \textbf{18-24} & \textbf{25-29} & \textbf{30-39} & \textbf{40-49} & \textbf{F} & \textbf{sig} \\ \midrule
+18-24 & 225 & 1.84 & 1 &  &  &  &  & 8.223 & 0.000 \\
+25-29 & 72 & 1.89 & 1.1 & NS &  &  &  &  &  \\
+30-39 & 92 & 1.57 & 1 & NS & NS &  &  &  &  \\
+40-49 & 85 & 1.46 & 0.87 & * & NS & NS &  &  &  \\
+50-above & 62 & 1.14 & 0.7 & * & * & * & NS &  &  \\ \midrule
+\textbf{Education level} & \textbf{n} & \textbf{Mean} & \textbf{SD} & \textbf{Up to High school} & \textbf{Diploma} & \textbf{Bachelor} & \textbf{} & \textbf{F} & \textbf{sig} \\ \midrule
+Up to High school & 96 & 1.75 & 1.03 &  &  &  &  & 3.125 & 0. 026 \\
+Diploma & 146 & 1.7 & 0.99 & NS &  &  &  &  &  \\
+Bachelor & 227 & 1.7 & 1.04 & NS & NS &  &  &  &  \\
+Postgraduate & 67 & 1.31 & 0.84 & * & * & * &  &  &  \\ \midrule
+\textbf{Groups} & \textbf{n} & \textbf{M} & \textbf{SD} & \textbf{Less than 2 years} & \textbf{2-5 years} & \textbf{5-10 years} & \textbf{} & \textbf{F} & \textbf{sig} \\ \midrule
+\textless 2 years & 60 & 1.94 & 1.02 &  &  &  &  & 7.117 & 0.000 \\
+2-5 years & 156 & 1.75 & 0.99 & NS &  &  &  &  &  \\
+5-10 years & 93 & 1.86 & 1.08 & NS & NS &  &  &  &  \\
+\textgreater 10 years & 227 & 1.43 & 0.93 & * & * & * &  &  &  \\ \bottomrule
+\end{tabular}
+} %end resize
+\end{table}
+
+
+\section{Acknowledgements}
+
+ 
+\section{References}
+
+\end{linenumbers}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% end 
+\bibliography{dbqbib}{}
+\bibliographystyle{chicago}
+\end{document}
